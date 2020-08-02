@@ -27,7 +27,7 @@ import typing
 
 import aiohttp
 import discord
-from discord.ext import commands
+from redbot.core import commands
 
 from jishaku.codeblocks import Codeblock, codeblock_converter
 from jishaku.exception_handling import ReplResponseReactor

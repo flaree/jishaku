@@ -13,7 +13,7 @@ Voice-related functions and classes.
 
 import discord.opus
 import discord.voice_client
-from discord.ext import commands
+from redbot.core import commands
 
 try:
     import youtube_dl

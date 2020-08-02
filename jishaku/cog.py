@@ -15,7 +15,7 @@ import sys
 
 import discord
 import humanize
-from discord.ext import commands
+from redbot.core import commands
 
 from jishaku.cog_base import JishakuBase
 from jishaku.flags import JISHAKU_HIDE

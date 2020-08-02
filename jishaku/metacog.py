@@ -11,7 +11,7 @@ The metaclass definitions for the Jishaku cog.
 
 """
 
-from discord.ext import commands
+from redbot.core import commands
 
 
 class GroupCogMeta(commands.CogMeta):

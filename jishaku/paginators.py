@@ -16,7 +16,7 @@ import collections
 import re
 
 import discord
-from discord.ext import commands
+from redbot.core import commands
 
 from jishaku.hljs import get_language
 
