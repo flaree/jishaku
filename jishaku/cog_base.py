@@ -153,7 +153,7 @@ class JishakuBase(commands.Cog):  # pylint: disable=too-many-public-methods
         interface = PaginatorInterface(ctx.bot, paginator, owner=ctx.author)
         return await interface.send_to(ctx)
 
-    @commands.command(name="cancel")
+    @commands.command(name="cancelt")
     async def jsk_cancel(self, ctx: commands.Context, *, index: int):
         """
         Cancels a task with the given index.
