@@ -267,11 +267,9 @@ class JishakuBase(commands.Cog):  # pylint: disable=too-many-public-methods
 
     # Command-invocation commands
     @commands.command(name="su")
-    async def jsk_su(self, ctx: commands.Context, target: discord.User, *, command_string: str):
+    async def jsk_su(self, ctx: commands.Context, target: discord.Member, *, command_string: str):
         """
         Run a command as someone else.
-
-        This will try to resolve to a Member, but will use a User if it can't find one.
         """
 
         if ctx.guild:
