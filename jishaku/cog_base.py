@@ -272,12 +272,6 @@ class JishakuBase(commands.Cog):  # pylint: disable=too-many-public-methods
         Run a command as someone else.
         """
 
-        if ctx.guild:
-            # Try to upgrade to a Member instance
-            # This used to be done by a Union converter, but doing it like this makes
-            #  the command more compatible with chaining, e.g. `jsk in .. jsk su ..`
-            target = ctx.guild.get_member(target.id) or target
-
         alt_ctx = await copy_context_with(ctx, author=target, content=ctx.prefix + command_string)
 
         if alt_ctx.command is None:
