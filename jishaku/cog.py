@@ -119,7 +119,7 @@ async def jsk(self, ctx: commands.Context):
     else:
         summary.append(
             f"Message cache capped at {self.bot.max_messages} and "
-            f"presence/typing events are {presence_setting}"
+            f"presence/typing events are {presence_setting} - This means nothing until intents are out"
         )
     # pylint: enable=protected-access
 
